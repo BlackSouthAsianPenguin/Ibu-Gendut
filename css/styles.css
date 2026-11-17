@@ -28,3 +28,19 @@
 @media(max-width:900px){.nav-inner{flex-wrap:wrap;justify-content:space-between;gap:12px;padding:12px 0}.nav-inner nav{order:3;width:100%;justify-content:center;margin-left:0}.lang-switch{width:185px}}
 @media(max-width:580px){.nav-inner{flex-direction:row;align-items:center}.nav-inner nav{gap:18px;padding-top:7px}.brand{font-size:18px}.lang-switch{width:170px}.lang-switch button{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.lang-switch .lang-indicator{transition:none}}
+
+/* Premium menu catalogue */
+.menu-showcase{background:radial-gradient(ellipse at 5% 0%,#602c2350,transparent 50%),#1c1210}
+.menu-filter{display:flex;gap:10px;overflow-x:auto;padding:12px 0 20px;margin-top:26px;scrollbar-width:thin}
+.menu-tab{white-space:nowrap;cursor:pointer;background:#39231e;border:1px solid #8f6455;color:#f4e8db;border-radius:999px;padding:10px 16px;font:700 13px 'DM Sans',sans-serif}
+.menu-tab:hover,.menu-tab.active{background:#edbd7b;border-color:#edbd7b;color:#35180e}
+.menu-group{margin:25px 0 45px}.menu-group-title{font:600 27px 'Playfair Display',serif;color:#f1d3a4;margin:0 0 20px;padding:0 0 12px;border-bottom:1px solid #ba8a6355}
+.menu-product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.menu-product{background:linear-gradient(140deg,#3b231d,#291a17);border:1px solid #a9785e55;border-radius:19px;overflow:hidden;transition:transform .2s,border .2s}
+.menu-product:hover{transform:translateY(-3px);border-color:#edbd7b}
+.menu-product-art{height:140px;display:grid;place-items:center;font-size:76px;background:radial-gradient(circle at 40% 40%,#a66a3c7a,#42251e 65%,#301b17)}
+.menu-product-detail{padding:17px;display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.menu-product h4{font-size:16px;line-height:1.3;margin:0;font-weight:600;max-width:65%}
+.menu-price{white-space:nowrap;color:#f2c887;font-size:15px;font-weight:700}
+@media(max-width:850px){.menu-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){.menu-product-grid{gap:10px}.menu-product-art{height:105px;font-size:48px}.menu-product-detail{display:block;padding:12px}.menu-product h4{max-width:none;font-size:13px;margin-bottom:7px}.menu-price{font-size:14px}}
