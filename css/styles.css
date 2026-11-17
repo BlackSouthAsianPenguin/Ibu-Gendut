@@ -52,3 +52,11 @@
 .menu-product h4{max-width:none;min-width:0}
 .menu-product-description{grid-column:1/-1;color:#d7c2b5;font:400 13px/1.55 'DM Sans',sans-serif;margin:0}
 @media(max-width:580px){.menu-product-detail{display:grid;grid-template-columns:minmax(0,1fr);gap:7px}.menu-product-description{grid-column:1;font-size:12px;line-height:1.45}}
+
+/* Original restaurant menu gallery — landscape */
+.menu-gallery{background:linear-gradient(140deg,#351512,#1b1210)}
+.gallery-track{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:30px}
+.gallery-track a{display:block;overflow:hidden;border:1px solid #e6b66b55;border-radius:16px;background:#2b1512;box-shadow:0 15px 35px #0005}
+.gallery-track img{display:block;width:100%;height:auto;aspect-ratio:1999/1414;object-fit:contain;transition:transform .25s}
+.gallery-track a:hover img{transform:scale(1.025)}
+@media(max-width:700px){.gallery-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:12px}.gallery-track a{flex:0 0 92%;scroll-snap-align:center}}
