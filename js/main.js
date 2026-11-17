@@ -238,6 +238,18 @@ const translations = {
     "발리 음식을 사랑하는 마음으로 ♥"
   ]
 };
+Object.assign(translations, {
+  menuLabel: ["RESTAURANT MENU · IBU GENDUT", "레스토랑 메뉴 · 이부 겐둣"],
+  menuTitle: ["Menu & Prices", "메뉴 및 가격"],
+  menuDesc: ["Explore food, family meals, desserts and drinks from the restaurant menu photographs. All prices are in Indonesian Rupiah.", "식당 메뉴 사진을 바탕으로 음식, 가족 메뉴, 디저트, 음료를 확인하세요. 모든 가격은 인도네시아 루피아 기준입니다."],
+  menuNote: ["Prices and availability may change. Please confirm when visiting.", "가격과 판매 여부는 변경될 수 있습니다. 방문 시 확인해 주세요."],
+  filterall: ["All", "전체"],
+  filtersignature: ["Babi Guling Rice", "바비 굴링"],
+  filterfavorites: ["Favorites", "인기 메뉴"],
+  filterfamily: ["Family & Sides", "가족 및 곁들임 메뉴"],
+  filterdessert: ["Desserts", "디저트"],
+  filterdrinks: ["Drinks", "음료"]
+});
 const heroTranslations = {"en":"Authentic <em>Balinese Roast Pork</em>.","ko":"정통 발리식 <em>바비 굴링</em>의 맛."};
 const allowedLanguages = ['id','en','ko'];
 function setLanguage(lang) {
