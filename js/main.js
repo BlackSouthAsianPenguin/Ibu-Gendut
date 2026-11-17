@@ -250,6 +250,7 @@ Object.assign(translations, {
   filterdessert: ["Desserts", "디저트"],
   filterdrinks: ["Drinks", "음료"]
 });
+Object.assign(translations, {orderContact:["Ordering Contact","주문 문의"],orderWhatsapp:["💬 Order via WhatsApp","💬 WhatsApp으로 주문"]});
 const heroTranslations = {"en":"Authentic <em>Balinese Roast Pork</em>.","ko":"정통 발리식 <em>바비 굴링</em>의 맛."};
 const allowedLanguages = ['id','en','ko'];
 function setLanguage(lang) {
