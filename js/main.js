@@ -1,6 +1,9 @@
 'use strict';
 /* Multilingual content — Indonesian (default), English, Korean. */
 const translations = {
+  "navGallery": ["Gallery", "메뉴 갤러리"],
+  "galleryTitle": ["Official Menu Gallery", "공식 메뉴 갤러리"],
+  "galleryDesc": ["Browse four pages of our original menu. Swipe to explore and tap an image to enlarge.", "공식 메뉴 4페이지를 살펴보세요. 좌우로 밀어 보고 사진을 누르면 크게 볼 수 있습니다."],
   "navAbout": [
     "About",
     "소개"
