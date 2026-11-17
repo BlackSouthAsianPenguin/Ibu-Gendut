@@ -19,7 +19,14 @@ function renderMenu(filter='all') {
    const grid=document.createElement('div');grid.className='menu-product-grid';
    entries.forEach(([category,name,price,emoji])=>{
      const article=document.createElement('article');article.className='menu-product';
-     const art=document.createElement('div');art.className='menu-product-art';art.textContent=emoji;art.setAttribute('aria-hidden','true');
+     const art=document.createElement('div');art.className='menu-product-art';art.setAttribute('aria-hidden','true');
+     const photoNames = ["special-portion","full-portion","regular-portion","large-portion","pork-ribs","satay","roasted-pork-skin","fried-pork-meat","fried-pork-skin","balinese-roasted-chicken","balinese-roasted-duck","babi-genyol","babi-kecap","babi-guling","babi-guling-sera-lemo","medium-sized-dessert","small-sized-dessert","special-family-dessert","watermelon-juice","mango-juice","guava-juice","orange-juice","happy-soda","coffee-latte"];
+     const slug=name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+     art.textContent=emoji;
+     if(photoNames.includes(slug)){
+       const photo=document.createElement('img');photo.src='images/menu/'+slug+'.webp';photo.alt=name;photo.loading='lazy';photo.decoding='async';
+       photo.onload=()=>{art.textContent='';art.appendChild(photo);};
+     }
      const details=document.createElement('div');details.className='menu-product-detail';
      const heading=document.createElement('h4');heading.textContent=name;
      const priceEl=document.createElement('span');priceEl.className='menu-price';priceEl.textContent='Rp '+price.toLocaleString('id-ID');
